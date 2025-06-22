@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miniature Gym</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .search-bar {
+      margin: 20px auto;
+      max-width: 600px;
+      display: flex;
+    }
+    .search-bar input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px 0 0 4px;
+    }
+    .search-bar button {
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 0 4px 4px 0;
+    }
+    .main-section {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+    .item {
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .item img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .item .rating {
+      color: gold;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .footer-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+    .footer-icons span {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MINIATURE GYM</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search for gym items...">
+    <button>Search</button>
+  </div>
+
+  <section class="main-section">
+    <div class="item">
+      <img src="https://via.placeholder.com/300x150.png?text=Dumbbell+Set" alt="Gym Item">
+      <p class="rating">⭐⭐⭐</p>
+    </div>
+    <div class="item">
+      <img src="https://via.placeholder.com/300x150.png?text=Mini+Gym+Machine" alt="Gym Item">
+      <p class="rating">⭐⭐⭐⭐</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-icons">
+      <span>❤️</span>
+      <span>🛒</span>
+      <span>👤</span>
+      <span>❌</span>
+    </div>
+    <p>&copy; 2025 Miniature Gym</p>
+  </footer>
+</body>
+</html>
